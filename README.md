@@ -1,2 +1,2 @@
-# certificate-template
-Certificate generator from html to pdf
+# Certificate Template
+Generate various template from html to pdf
