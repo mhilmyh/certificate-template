@@ -1,2 +1,7 @@
 # Certificate Template
-Generate various template from html to pdf
+## About
+Generate a certificate with template
+
+## Requirement
+- HTML5
+- CSS3
