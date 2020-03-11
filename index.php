@@ -25,6 +25,14 @@
                 <input type="text" class="form-control" id="cert-head" name="headline" placeholder="ex. First Place">
             </div>
             <div class="form-group">
+                <label for="cert-date">Date</label>
+                <input type="text" class="form-control" id="cert-date" name="date" placeholder="ex. 21 September 2020">
+            </div>
+            <div class="form-group">
+                <label for="cert-name">Person Name</label>
+                <input type="text" class="form-control" id="cert-name" name="name" placeholder="ex. M Hilmy Haidar">
+            </div>
+            <div class="form-group">
                 <label for="cert-desc">Description</label>
                 <textarea class="form-control" id="cert-desc" name="description" rows="3" placeholder="ex. Congratulations"></textarea>
             </div>
