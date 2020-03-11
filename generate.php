@@ -8,9 +8,6 @@ $name = $_REQUEST['name'];
 ?>
 
 <head>
-
-    <link rel="preload" href="certificate.js" as="script">
-
     <link href="https://fonts.googleapis.com/css?family=Bellota+Text|Berkshire+Swash|Oswald&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
@@ -43,11 +40,13 @@ $name = $_REQUEST['name'];
 </body>
 
 <script defer>
-    // Wait font to load first
-    setTimeout(() => {}, 1000);
-
     // Execute when window loaded
     window.onload = function() {
+        // Wait font to load first
+        drawCert();
+    };
+
+    function drawCert() {
         var cert = document.getElementById("cert-bg");
         var ctx = cert.getContext("2d");
         ctx.canvas.width = window.innerWidth;
@@ -78,7 +77,7 @@ $name = $_REQUEST['name'];
         ctx.fillText(
             "<?php echo $title; ?>",
             ctx.canvas.width / 2,
-            ctx.canvas.height / 5 + fontSize / 2
+            ctx.canvas.height / 5 + fontSize / 4
         );
 
         // Person Name
@@ -126,7 +125,7 @@ $name = $_REQUEST['name'];
             ctx.canvas.width / 2,
             ctx.canvas.height / 2 + fontSize * 2
         );
-    };
+    }
 </script>
 
 </html>
