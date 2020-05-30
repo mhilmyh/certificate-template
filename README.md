@@ -1,4 +1,4 @@
-# Certificate Template
+# Very Simple Certificate Template
 ## About
 Generate a certificate with template. You can copy this for free !
 
